@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>にゃんたのおみくじ</h1>
+
+    <p id="result">今日の運勢は……？</p>
+
+        <button onclick="
+        const result = ['大吉','中吉','小吉','大凶'][Math.floor(Math.random()*4)];
+
+        document.getElementById('result').textContent = result;
+        document.getElementById('result').animate(
+    [
+        { transform: 'scale(0.7)', opacity: 0 },
+        { transform: 'scale(1.1)', opacity: 1 },
+        { transform: 'scale(1)', opacity: 1 }
+    ],
+    450
+    );
+
+        if (result === '大吉') {
+            document.getElementById('message').textContent =
+                'にゃんた「今日はいいことありそう！」';
+        }
+
+        if (result === '中吉') {
+            document.getElementById('message').textContent =
+                'にゃんた「いい日になりますように！」';
+        }
+
+        if (result === '小吉') {
+            document.getElementById('message').textContent =
+                'にゃんた「普通がイチバン！」';
+        }
+
+        if (result === '大凶') {
+            document.getElementById('message').textContent =
+                'にゃんた「あとは上がるだけ！」';
+        }
+    ">
+        おみくじを引く！
+    </button>
+
+    <img src="nyanta.png" alt="にゃんた" width="160">
+
+    <p id="message">にゃんた「結果を待ってるよ！」</p>
+
+</body>
+
+</html>

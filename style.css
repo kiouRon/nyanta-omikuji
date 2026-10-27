@@ -1,0 +1,41 @@
+
+body {
+    text-align: center;
+    background-color: honeydew;
+}
+
+h1 {
+    color: forestgreen;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+p {
+    color: seagreen;
+}
+
+button {
+    background-color: goldenrod;
+    color: darkgreen;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 30px;
+}
+
+#result {
+    font-size: 38px;
+    font-weight: bold;
+    color: darkgoldenrod;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    border: 3px solid goldenrod;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+}
